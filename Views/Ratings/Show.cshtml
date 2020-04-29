@@ -1,0 +1,12 @@
+@model List<Derp>
+
+<h1>We Rate Cats</h1>
+
+@foreach (var animal in Model)
+{
+    <div>
+        <h2>@animal.Title</h2>
+        <img src="@animal.Image" class="image-fluid mx-auto d-block">
+        <div>@animal.Rating / 10</div>
+    </div>
+}
